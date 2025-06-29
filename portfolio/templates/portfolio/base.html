@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gisele Pavellegini | Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+
+    <!-- Header e nav -->
+    <header class="header-topo">
+        <img src="{% static 'img/gisele.jpeg' %}" alt="Foto de Gisele Pavellegini" class="foto-perfil">
+        <div class="texto-header">
+            <h1>Gisele Pavellegini · <span class="subtitulo">Portfólio profissional</span></h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="{% url 'lista_posts' %}">Posts</a>
+        <a href="{% url 'criar_post' %}">Novo Post</a>
+        <a href="{% url 'contato' %}">Contato</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Gisele Pavellegini. Todos os direitos reservados.</p>
+    </footer>
+
+<script src="{% static 'js/scripts.js' %}"></script>
+
+
+</body>
+</html>
+
+
+

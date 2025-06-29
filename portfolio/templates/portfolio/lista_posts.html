@@ -1,0 +1,24 @@
+{% extends "portfolio/base.html" %}
+
+
+{% block content %}
+  <h1>Posts</h1>
+  
+  <form method="get" action="{% url 'lista_posts' %}" style="margin-bottom: 20px;">
+  <input type="text" name="q" placeholder="Buscar por título..." value="{{ busca|default:'' }}">
+  <button type="submit" class="botao">Buscar</button>
+</form>
+
+  <a href="{% url 'criar_post' %}">Criar Novo Post</a>
+  <ul>
+    {% for post in posts %}
+      <li>
+        <h2>{{ post.titulo }}</h2>
+        <p>{{ post.conteudo|linebreaks }}</p>
+        <small>Categoria: {{ post.categoria.nome }} - Publicado em: {{ post.data_publicacao }}</small>
+      </li>
+    {% empty %}
+      <li>Nenhum post encontrado.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

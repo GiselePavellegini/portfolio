@@ -1,0 +1,89 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="sobre" class="bloco reveal">
+    <h2>Sobre Mim</h2>
+    <p>Sou formada em Administração pela Faculdade de Ampére e em Física pela Universidade Federal Fronteira Sul – campus Realeza/PR. Também sou Mestre em Física, com ênfase na área teórica da Física da Matéria Condensada, pela Universidade Tecnológica Federal do Paraná – UTFPR, campus Curitiba.</p>
+    <p>Apesar de ter sido aprovada para o doutorado na Universidade Federal de Pelotas, decidi fazer uma transição de carreira para a área de Ciência de Dados, pois já tinha familiaridade com modelagem matemática e linguagem Python.</p>
+    <p>Atualmente estou cursando a trilha de formação Python Data Analyst pela Coderhouse.</p>
+    <p>Trabalho há 15 anos como servidora pública, o que me proporcionou uma vivência rica em ambientes institucionais e políticos. Durante esse período, desenvolvi habilidades interpessoais importantes, como empatia, escuta ativa, resiliência e comunicação clara.</p>
+    <p>Também atuei como professora de Física durante um ano, uma experiência intensa e transformadora, tanto no aspecto técnico quanto humano.</p>
+    <p>Sempre busquei aprender e crescer, então acabei desenvolvendo novas habilidades técnicas ao longo do tempo, como:</p>
+    <ul>
+        <li>Análise de dados com Python (Numpy, Pandas, Matplotlib)</li>
+        <li>Manipulação de dados em Excel e Power BI</li>
+        <li>Fundamentos de SQL</li>
+        <li>Modelagem estatística</li>
+        <li>Apresentação e comunicação de dados</li>
+        <li>Noções de Django para desenvolvimento web</li>
+        <li>Organização de relatórios e dashboards para públicos não técnicos</li>
+    </ul>
+    <p>Atualmente sou analista de dados na Secretaria Municipal de Ampére, onde desenvolvo estudos com foco em diagnóstico educacional e análise de indicadores sociais e econômicos.</p>
+    <p>Também atuo na Sala do Empreendedor de Ampére, junto à Secretaria de Indústria e Comércio e ao Banco Fomento Paraná.</p>
+</section>
+
+<section id="educacao" class="bloco reveal">
+    <h2>Educação</h2>
+    <ul>
+        <li>🎓 Física - UFFS</li>
+        <li>🎓 Mestrado em Física da Matéria Condensada - UTFPR</li>
+        <li>📊 Curso de Data Analysis (em andamento) - Coderhouse</li>
+    </ul>
+</section>
+
+<section id="habilidades" class="bloco reveal">
+  <h2>Habilidades e Competências</h2>
+
+  <h3>Hard Skills</h3>
+  <ul>
+    <li><strong>Análise de Dados:</strong> Excel (avançado), Power BI, Python (Pandas, NumPy, Matplotlib), SQL</li>
+    <li><strong>Desenvolvimento Web:</strong> Estudando Django e construção de aplicações web com Python </li>
+    <li><strong>Linguagens e Ferramentas:</strong> Git, HTML/CSS, VS Code</li>
+
+   <li><strong>Idiomas:</strong>
+  <ul class="no-bullet">
+    <li>Inglês Avançado (C1) – conversação fluente e técnico</li>
+    <li>Francês Básico (A1) – em aprendizado contínuo</li>
+  </ul>
+</li>
+
+  
+
+  <h3>Soft Skills</h3>
+  <ul>
+    <li>Comunicação clara e empática</li>
+    <li>Organização e foco em resultados</li>
+    <li>Autodidata apaixonada por aprender</li>
+    <li>Pensamento lógico e estruturado</li>
+    <li>Inteligência emocional e escuta ativa</li>
+    <li>Grande capacidade de adaptação e resiliência</li>
+    <li>Proatividade e espírito de equipe</li>
+    <li>Preferência por trabalho presencial, pois valorizo conexões humanas e colaboração direta</li>
+  </ul>
+</section>
+
+
+<section id="projetos" class="bloco reveal">
+    <h2>Projetos</h2>
+    <ul>
+        <li>Análise de Dados Educacionais – Python + Pandas + Matplotlib</li>
+        <li>Predições Estatísticas – Python + Excel</li>
+        <li>Este site pessoal com Django 🎉</li>
+    </ul>
+    <a href="{% url 'contato' %}" class="botao">Fale comigo</a>
+</section>
+
+<section id="extra" class="bloco reveal">
+    <h2>Extras</h2>
+    <ul>
+        <li>📚 Graduação em Administração pela Faculdade de Ampére</li>
+        <li>🎙️ Criadora do Podcast: Depois dos 30</li>
+        <li>🦉 Resultado do Duolingo English Test:
+            <a href="https://certs.duolingo.com/7ycgdhsd61i1dkp2" target="_blank" class="botao">Ver certificado</a>
+        </li>
+    </ul>
+</section>
+{% endblock %}
+
+
